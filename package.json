@@ -1,0 +1,19 @@
+{
+  "name": "code-doc",
+  "version": "1.0.0",
+  "description": "个人笔记记录平台",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "author": "李东阳",
+  "license": "MIT",
+  "dependencies": {
+    "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
+    "dayjs": "^1.11.11",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-helper-live2d": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.8"
+  }
+}
