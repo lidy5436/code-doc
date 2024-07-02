@@ -9,6 +9,7 @@ module.exports = {
         ['link', {rel: 'icon', href: '/favicon.ico'}],
     ],
     port: 1998,
+    dest: 'dist',
     plugins: [
         ['vuepress-plugin-helper-live2d'],
         ['vuepress-plugin-zooming'],
