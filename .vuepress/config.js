@@ -26,7 +26,8 @@ module.exports = {
         repo: 'https://github.com/lidy5436',
         nav: navbar,
         sidebar: sidebar,
-        sidebarDepth: 0
+        sidebarDepth: 0,
+        lastUpdated: '最后更新时间',
 
     }
 }
