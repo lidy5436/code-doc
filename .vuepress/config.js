@@ -1,6 +1,7 @@
 const days = require('dayjs')
 const navbar = require('./navbar.js');
 const sidebar = require('./sidebar.js');
+const footer = require('./footer');
 
 module.exports = {
     title: '李东阳的笔记',
@@ -14,6 +15,7 @@ module.exports = {
         ['vuepress-plugin-helper-live2d'],
         ['vuepress-plugin-zooming'],
         ['@xiaopanda/vuepress-plugin-code-copy'],
+        ['vuepress-plugin-right-anchor'],
         ['@vuepress/last-updated',
             {
                 transformer: (timestamp, lang) => {
@@ -27,6 +29,7 @@ module.exports = {
         repo: 'https://github.com/lidy5436',
         nav: navbar,
         sidebar: sidebar,
+        footer:footer,
         sidebarDepth: 0,
         lastUpdated: '最后更新时间',
 

@@ -45,7 +45,9 @@ Flexbox（弹性盒模型）是一种CSS布局方式，提供了一种更加有�
 
 **column-reverse：主轴为垂直方向，起点在下沿**
 
-![20240324005](C:\Users\Administrator\Desktop\code\doc\前端技术\img\20240324005.png)2.3. **决定容器内项目是否可换行**
+![image-20240707234209085](https://lidy-1300763668.cos.ap-nanjing.myqcloud.com/image/202407072342203.png)
+
+2.3. **决定容器内项目是否可换行**
 
 默认情况下，项目都排在主轴线上，使用 flex-wrap 可实现项目的换行。
 
