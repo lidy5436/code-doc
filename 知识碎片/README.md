@@ -16,6 +16,8 @@
 
 ⭐️[异步编程利器CompletableFuture](/知识碎片/后端专题/异步编程利器CompletableFuture.md)
 
+⭐️[PDF文件转图片](/知识碎片/后端专题/PDF文件转图片.md)
+
 ## 前端专题
 
 ⭐️[flex布局详解](/知识碎片/前端专题/flex布局详解.md)
