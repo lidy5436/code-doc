@@ -56,11 +56,11 @@ export default {
   color $textColor
   top 80px
   background transparent
-  padding 0 16px
+  padding 0
 
 .page-container-right-pos-box
   position fixed
-  padding 16px
+  padding 0
   top 80px
   width 100%
   height 80vh
@@ -78,6 +78,7 @@ export default {
   max-width 80%
 
 .page-container-right-title
+  padding 0 16px
   font-weight: bold
 
 </style>
