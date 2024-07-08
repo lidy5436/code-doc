@@ -154,6 +154,7 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
  */
 export function resolveHeaders (page) {
   const headers = groupHeaders(page.headers || [])
+  // TODO: 需要重写
   return [{
     type: 'group',
     collapsable: false,
