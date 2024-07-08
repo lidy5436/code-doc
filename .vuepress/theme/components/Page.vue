@@ -7,14 +7,14 @@
         <PageEdit/>
         <PageNav v-bind="{ sidebarItems }"/>
       </div>
-      <div class="page-container-right-wrapper">
+      <div class="page-container-right-wrapper" v-if="'李东阳的个人笔记记录平台'!==pageSidebarItems[0].title">
         <div class="page-container-right-pos-box">
-          <div class="page-container-right-title" >
-            {{ pageSidebarItems[0].title }}
+          <div class="page-container-right-title">
+            {{  pageSidebarItems[0].title }}
           </div>
           <hr/>
           <div class="page-container-right-toc-box">
-            <PageSidebarToc :depth="0" :items="pageSidebarItems" :sidebar-depth="6"/>
+            <PageSidebarToc :items="pageListHeaders"/>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@ import PageSidebarToc from "../components/PageSidebarToc.vue";
 
 export default {
   components: {PageSidebarToc, PageEdit, PageNav},
-  props: ['sidebarItems', 'pageSidebarItems'],
+  props: ['sidebarItems', 'pageSidebarItems', 'pageListHeaders'],
 }
 </script>
 
@@ -68,14 +68,16 @@ export default {
   overflow-y auto
 
 .page-container-right-toc-box
-  max-height 80vh
+  max-height calc(100% - 250px)
   overflow-x hidden
   overflow-y auto
   box-sizing border-box
+  height: calc(100% - 250px)
 
 .theme-default-content:not(.custom)
   max-width 80%
 
 .page-container-right-title
   font-weight: bold
+
 </style>

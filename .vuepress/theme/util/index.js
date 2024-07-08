@@ -154,7 +154,6 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
  */
 export function resolveHeaders (page) {
   const headers = groupHeaders(page.headers || [])
-  // TODO: 需要重写
   return [{
     type: 'group',
     collapsable: false,
@@ -243,4 +242,15 @@ function resolveItem (item, pages, base, groupDepth = 1) {
       collapsable: item.collapsable !== false
     }
   }
+}
+
+export function listHeaders (page) {
+  return listDataTree(page.headers || [])
+}
+
+export function listDataTree  (headers){
+  if (!headers || !headers.length) {
+    return
+  }
+  return [...headers]
 }
