@@ -15,7 +15,6 @@ module.exports = {
         ['vuepress-plugin-helper-live2d'],
         ['vuepress-plugin-zooming'],
         ['@xiaopanda/vuepress-plugin-code-copy'],
-        ['vuepress-plugin-right-anchor'],
         ['@vuepress/last-updated',
             {
                 transformer: (timestamp, lang) => {
