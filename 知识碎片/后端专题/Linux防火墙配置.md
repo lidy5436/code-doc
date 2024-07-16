@@ -1,8 +1,8 @@
-### CentOS 7.x 防火墙配置指南
+## CentOS 7.x 防火墙配置指南
 
 防火墙是保障系统安全的一个重要组件，通过对进出网络流量的控制，可以有效防止未经授权的访问。本文将详细介绍如何在 CentOS 7.x 上配置和管理防火墙。
 
-#### 1. 查看 Firewall 服务状态
+### 1. 查看 Firewall 服务状态
 要检查 `firewalld` 服务的运行状态，可以使用以下命令：
 ```bash
 systemctl status firewalld
@@ -11,7 +11,7 @@ systemctl status firewalld
 
 ![Firewall 服务状态](https://lidy-1300763668.cos.ap-nanjing.myqcloud.com/image/202407162136549.png)
 
-#### 2. 查看 Firewall 的状态
+### 2. 查看 Firewall 的状态
 要简单地查看 `firewalld` 服务是否正在运行，可以使用：
 ```bash
 firewall-cmd --state
@@ -20,7 +20,7 @@ firewall-cmd --state
 
 ![Firewall 状态](https://lidy-1300763668.cos.ap-nanjing.myqcloud.com/image/202407162137753.png)
 
-#### 3. 启动、重启、停止 `firewalld` 服务
+### 3. 启动、重启、停止 `firewalld` 服务
 根据需要，可以启动、重启或停止 `firewalld` 服务：
 ```bash
 # 启动服务
@@ -34,7 +34,7 @@ service firewalld stop
 ```
 这些命令可以帮助你在不同情况下控制 `firewalld` 服务的运行状态。
 
-#### 4. 查看防火墙规则
+### 4. 查看防火墙规则
 要查看当前防火墙的全部规则，可以使用：
 ```bash
 firewall-cmd --list-all
@@ -43,7 +43,7 @@ firewall-cmd --list-all
 
 ![防火墙规则](https://lidy-1300763668.cos.ap-nanjing.myqcloud.com/image/202407162137259.png)
 
-#### 5. 查询、开放、关闭端口
+### 5. 查询、开放、关闭端口
 防火墙允许你查询特定端口的状态以及开放或关闭端口。以下是一些常用的命令：
 
 **查询端口是否开放：**
@@ -68,7 +68,7 @@ firewall-cmd --permanent --remove-port=80/tcp
 firewall-cmd --reload
 ```
 
-#### 6. 其他常用防火墙操作
+### 6. 其他常用防火墙操作
 
 **查看特定区域的规则：**
 ```bash
