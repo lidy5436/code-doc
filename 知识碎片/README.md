@@ -22,6 +22,8 @@
 
 ⭐️ [Linux防火墙配置](/知识碎片/后端专题/Linux防火墙配置.md)
 
+⭐️[SpringBoot中的6种API请求参数读取方式](/知识碎片/后端专题/SpringBoot中的6种API请求参数读取方式.md)
+
 
 ## 前端专题
 

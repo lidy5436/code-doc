@@ -6,7 +6,6 @@ const footer = require('./footer');
 module.exports = {
     title: '李东阳的笔记',
     description: '李东阳的知识分享和笔记记录平台',
-    base: '/code-doc/',
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
     ],
